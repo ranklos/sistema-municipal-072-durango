@@ -1,0 +1,215 @@
+{
+  "municipio": "Durango",
+  "sistema": "072_reportes_ciudadanos",
+  "version": "2.3.0",
+  "knowledge_base": {
+    "informacion_general": {
+      "nombre_completo": "Municipio de Durango",
+      "estado": "Durango, México",
+      "poblacion": "654,876 habitantes",
+      "alcalde": "Ing. Marina Vitela Rodríguez",
+      "telefono_principal": "618-821-2121",
+      "sitio_web": "https://www.durango.gob.mx",
+      "direccion": "Av. 20 de Noviembre #227 Ote., Zona Centro, 34000 Durango, Dgo.",
+      "horarios_atencion": "Lunes a Viernes 8:00 AM - 4:00 PM"
+    },
+    
+    "sistema_072": {
+      "descripcion": "Sistema Municipal de Reportes Ciudadanos",
+      "objetivo": "Atender reportes de servicios públicos las 24 horas del día",
+      "cobertura": "Todo el municipio de Durango",
+      "tiempo_respuesta": "Máximo 48 horas hábiles",
+      "canales": ["WhatsApp", "Teléfono", "Presencial", "Portal Web"]
+    },
+    
+    "departamentos": {
+      "obras_publicas": {
+        "nombre": "Dirección de Obras Públicas",
+        "responsable": "Ing. Carlos Mendoza",
+        "telefono": "618-821-2130",
+        "email": "obras.publicas@durango.gob.mx",
+        "servicios": ["Bacheo", "Pavimentación", "Construcción", "Mantenimiento vial"]
+      },
+      "servicios_urbanos": {
+        "nombre": "Dirección de Servicios Urbanos",
+        "responsable": "Lic. Ana García",
+        "telefono": "618-821-2145",
+        "email": "servicios.urbanos@durango.gob.mx",
+        "servicios": ["Recolección de basura", "Limpieza de lotes", "Áreas verdes", "Panteones"]
+      },
+      "alumbrado_publico": {
+        "nombre": "Departamento de Alumbrado Público",
+        "responsable": "Téc. Roberto Silva",
+        "telefono": "618-821-2160",
+        "email": "alumbrado@durango.gob.mx",
+        "servicios": ["Reparación de luminarias", "Instalación de lámparas", "Mantenimiento eléctrico"]
+      },
+      "agua_potable": {
+        "nombre": "Agua Potable Municipal",
+        "responsable": "Ing. María López",
+        "telefono": "618-821-2175",
+        "email": "agua.potable@durango.gob.mx",
+        "servicios": ["Reparación de fugas", "Instalación de tomas", "Medidores", "Calidad del agua"]
+      }
+    },
+    
+    "tipos_reportes": {
+      "072-001": {
+        "codigo": "072-001",
+        "nombre": "Bacheo y Pavimentación",
+        "descripcion": "Reparación de baches, fisuras y deterioro en calles",
+        "departamento": "obras_publicas",
+        "tiempo_atencion": "5-7 días hábiles",
+        "materiales": "Asfalto, mezcla asfáltica, selladores"
+      },
+      "072-002": {
+        "codigo": "072-002",
+        "nombre": "Alumbrado Público",
+        "descripcion": "Reparación y mantenimiento de luminarias",
+        "departamento": "alumbrado_publico",
+        "tiempo_atencion": "2-3 días hábiles",
+        "materiales": "Lámparas LED, balastros, cableado"
+      },
+      "072-003": {
+        "codigo": "072-003",
+        "nombre": "Recolección de Basura",
+        "descripcion": "Servicio de recolección de residuos sólidos",
+        "departamento": "servicios_urbanos",
+        "tiempo_atencion": "24-48 horas",
+        "horarios": "Lunes, Miércoles, Viernes 6:00 AM"
+      },
+      "072-004": {
+        "codigo": "072-004",
+        "nombre": "Fugas de Agua",
+        "descripcion": "Reparación de fugas en red de agua potable",
+        "departamento": "agua_potable",
+        "tiempo_atencion": "Emergencia: 2-4 horas, Normal: 24 horas",
+        "clasificacion": "Urgente si afecta vialidad"
+      },
+      "072-005": {
+        "codigo": "072-005",
+        "nombre": "Limpieza de Lotes Baldíos",
+        "descripcion": "Limpieza y desmalezado de terrenos abandonados",
+        "departamento": "servicios_urbanos",
+        "tiempo_atencion": "7-10 días hábiles",
+        "proceso": "Notificación al propietario + Limpieza municipal"
+      },
+      "072-006": {
+        "codigo": "072-006",
+        "nombre": "Áreas Verdes y Parques",
+        "descripcion": "Mantenimiento de parques, jardines y espacios públicos",
+        "departamento": "servicios_urbanos",
+        "tiempo_atencion": "3-5 días hábiles",
+        "actividades": "Poda, riego, replantación, mobiliario"
+      }
+    },
+    
+    "procedimientos": {
+      "recepcion_reporte": {
+        "paso_1": "Ciudadano reporta vía WhatsApp al chatbot",
+        "paso_2": "Sistema genera folio automático DGO-072-XXXXXX",
+        "paso_3": "Clasificación automática por código 072",
+        "paso_4": "Registro en Google Sheets con todos los datos",
+        "paso_5": "Asignación departamental según tipo de reporte"
+      },
+      "seguimiento": {
+        "paso_1": "Dashboard municipal recibe el reporte",
+        "paso_2": "Personal asigna responsable específico",
+        "paso_3": "Actualización de estado: Pendiente → En proceso → Completado",
+        "paso_4": "Agregar notas de seguimiento y evidencias",
+        "paso_5": "Notificación al ciudadano del estado"
+      },
+      "cierre": {
+        "criterios": "Problema resuelto + Evidencia fotográfica + Validación ciudadana",
+        "documentacion": "Notas finales, materiales usados, personal involucrado",
+        "tiempo_cierre": "Máximo 48 horas después de completado"
+      }
+    },
+    
+    "personal_municipal": {
+      "supervisor_072": {
+        "nombre": "Ing. Pedro Ramírez",
+        "cargo": "Supervisor General Sistema 072",
+        "telefono": "618-821-2100",
+        "email": "supervisor.072@durango.gob.mx",
+        "responsabilidades": "Coordinación general, escalación, reportes"
+      },
+      "operadores": {
+        "turno_matutino": {
+          "horario": "6:00 AM - 2:00 PM",
+          "responsable": "Lic. Carmen Rodríguez",
+          "telefono": "618-821-2102"
+        },
+        "turno_vespertino": {
+          "horario": "2:00 PM - 10:00 PM", 
+          "responsable": "Téc. Miguel Hernández",
+          "telefono": "618-821-2103"
+        },
+        "turno_nocturno": {
+          "horario": "10:00 PM - 6:00 AM",
+          "responsable": "Guardia Municipal",
+          "telefono": "618-821-2104"
+        }
+      }
+    },
+    
+    "metricas_objetivo": {
+      "tiempo_respuesta_inicial": "Máximo 2 minutos (chatbot)",
+      "asignacion_departamental": "Máximo 30 minutos",
+      "inicio_atencion": "Máximo 4 horas hábiles",
+      "resolucion_promedio": "48 horas hábiles",
+      "satisfaccion_ciudadana": "Mínimo 85%",
+      "reportes_mensuales": "Capacidad 1000+ reportes"
+    },
+    
+    "integraciones": {
+      "voiceflow": {
+        "purpose": "Chatbot conversacional WhatsApp",
+        "features": "Captura de datos, clasificación automática, generación de folios"
+      },
+      "make_com": {
+        "purpose": "Automatización y conectores",
+        "features": "Webhook processing, Google Sheets sync, notificaciones"
+      },
+      "google_sheets": {
+        "purpose": "Base de datos principal",
+        "features": "13 campos completos, sincronización tiempo real"
+      },
+      "dashboard": {
+        "purpose": "Panel administrativo municipal",
+        "features": "Visualización, edición inline, gestión de estados, reportes"
+      }
+    },
+    
+    "preguntas_frecuentes": {
+      "ciudadanos": [
+        {
+          "pregunta": "¿Cómo reportar un bache?",
+          "respuesta": "Envía un WhatsApp con la ubicación exacta y descripción del problema. El sistema te generará un folio de seguimiento."
+        },
+        {
+          "pregunta": "¿Cuánto tiempo toma reparar un bache?",
+          "respuesta": "El tiempo promedio es de 5-7 días hábiles, dependiendo del tamaño y ubicación. Recibirás actualizaciones del estado."
+        },
+        {
+          "pregunta": "¿Puedo dar seguimiento a mi reporte?",
+          "respuesta": "Sí, con tu folio DGO-072-XXXXXX puedes consultar el estado en cualquier momento."
+        }
+      ],
+      "personal": [
+        {
+          "pregunta": "¿Cómo asignar un reporte?",
+          "respuesta": "En el dashboard, hacer clic en la columna Assignee y seleccionar el responsable del dropdown."
+        },
+        {
+          "pregunta": "¿Cómo cambiar el estado de un reporte?",
+          "respuesta": "Hacer clic en el badge de Estado y seleccionar: Pendiente, En proceso, Completado, En revisión o Cancelado."
+        },
+        {
+          "pregunta": "¿Cómo agregar notas de seguimiento?",
+          "respuesta": "Hacer clic en la columna Notes y escribir las actualizaciones. Se guarda automáticamente en Google Sheets."
+        }
+      ]
+    }
+  }
+}
